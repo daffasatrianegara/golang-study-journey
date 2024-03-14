@@ -1,0 +1,13 @@
+jika ingin convert String to int, menggunakan "strconv.Atoi". atoi refers to "Alphabet To Integer".
+wajib menggunakan 2 variabel, contoh :
+stringConv, err := strconv.Atoi("100")
+if err != nil {
+    fmt.Print("error message")
+    return
+} 
+jika tidak ingin menggunakan 2 variabel untuk checking error, bisa menggunakan "_", contoh :
+stringConv, _ := strconv.Atoi("100")
+
+sedangkan untuk convert int to string, menggunakan "strconv.Itoa". Itoa refers to "Integer To Alphabet".
+tidak wajib menggunakan 2 variabel, contoh :
+intConv := strconv.Itoa(15000)
