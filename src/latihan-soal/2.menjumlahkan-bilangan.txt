@@ -1,0 +1,6 @@
+buatlah kode program untuk menjumlahkan nilai awal sampai nilai akhir. contoh:
+nilai awal = 1
+nilai akhir = 5
+maka, pemrosesan kodenya akan seperti berikut : 1 + 2 + 3 + 4 + 5
+output :
+hasil nilai dari penjumlahan tersebut. contoh dari program diatas = 1 + 2 + 3 + 4 + 5 = 15

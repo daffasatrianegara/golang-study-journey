@@ -1,0 +1,9 @@
+buatlah sebuah function (nama function bebas) dengan 1 parameter ber type integer. dan akan me return
+string ganjil atau genap sesuai nilai dari parameter yang di masukkan. contoh:
+
+nilai = 5
+checkNilai(nilai)
+output :
+nilai yang anda masukkan adalah bilangan ganjil.
+
+VARIASIKAN SEBEBAS MUNGKIN!!!
