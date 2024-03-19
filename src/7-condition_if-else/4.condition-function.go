@@ -16,12 +16,14 @@ func GKB(play int) (hasil string, playerAnswer string, computerAnswer string) {
 		hasil = "Anda kalah, coba lagi..."
 	} else if (playerAnswer == computerAnswer) {
 		hasil = "Pertandingan seri"
+	} else {
+		hasil = "ERROR, nilai tidak ada"
 	}
 	return
 }
 
 func main() {
-	jawaban := 3
+	jawaban := 4
 	hasil, playerAnswer, computerAnswer := GKB(jawaban)
 	fmt.Printf("\nPERMAINAN GUNTING, KERTAS, BATU\nAnda memilih\t\t: %v\nKomputer memilih\t: %v\nHASIL\t\t\t: %v\n\n", playerAnswer, computerAnswer, hasil)
 }
