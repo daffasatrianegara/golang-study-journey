@@ -1,0 +1,14 @@
+dalam bahasa golang, setiap variabel memiliki address/alamat masing-masing. alamat tersebut disimpan didalam memori. selain alamat, variabel juga tentunya memiliki value/nilai. pada bahasa golang, terdapat tanda-tanda untuk melihat address maupun memanipulasi value pada variabel yang disebut pointer. berikut tanda-tandanya:
+& : melambangkan alamat, contoh &number akan menghasilkan output alamat dari variabel number.
+* : melambangkan nilai, contoh *number akan menghasilkan nilai dari variabel number.
+contoh dalam kode :
+
+    number := 100
+	numberVal := &number
+
+	fmt.Println(&number) // address dari number (1)
+	fmt.Println(numberVal) // address dari numberVal yang mengambil dari address number (2)
+	fmt.Println(*numberVal) // value dari number (3)
+	fmt.Println(number) // value dari number (4)
+
+variabel awal adalah number dengan value 100. setelah itu variabel numberVal akan mengambil alamat memori dari number, jika dilihat pada bagian print nomor 1 dan 2, outputnya sama. sedangkan jika ingin melihat value dari variabel number cukup memanggil variabel tersebut. akan tetapi beda kasus ketika ingin mengambil value dari variabel numberVal, karena variabel tersebut berisi alamat, untuk mengambil nilai yang berada di alamat tersebut harus menggunakan tanda *.
